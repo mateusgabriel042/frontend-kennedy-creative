@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap');
+
+
+html, body {background-color:rgba(242, 242, 242, 0.094) !important; width:100% !important;}
+
+a {text-decoration:none !important;}
+
+* {font-family:'roboto'; font-weight: 300;}
+
+::-webkit-scrollbar {width:7px;}
+::-webkit-scrollbar-track-piece {background-color:#efefef;}
+::-webkit-scrollbar-thumb {background-color:#666666;}
+
+.header, .nav {
+  background-color: #054c8e;
+}
+
+.box-header-welcome {
+  background-color: #00305b;
+}
+
+.nav-links a {
+  padding:5px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  color:#efefef;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  transition: 0.3s;
+  background-color: #efefef;
+  color:#054c8e;
+}
