@@ -12,6 +12,9 @@ export default function Home() {
           <span className="font-bold text-[30px] text-white">+Japan</span>
         </div>
 
+        <button className="btn-open-nav-mobile">
+          <i className="fa fa-navicon"></i>
+        </button>
         <div className="flex items-center nav-links">
           <Link href="#">O Curso</Link>
           <Link href="#">Sobre nós</Link>
@@ -26,13 +29,13 @@ export default function Home() {
 
         <div className="flex w-full px-[10%] gap-x-4 items-center justify-between py-9">
           <div className="">
-            <p className="text-[35px] font-semibold text-white">Seu App para <span className="text-yellow-300 font-semibold">aprender</span><br/>Japonês e e muito mais, baixe<br/>agora mesmo</p>
+            <p className="text-[35px] max-w-[500px] font-semibold text-white">Seu App para <span className="text-yellow-300 font-semibold">aprender</span> Japonês e e muito mais, baixe agora mesmo</p>
             <button className="mt-5 flex gap-x-3 items-center bg-white rounded-xl font-medium px-5 py-3" style={{color: "#054c8e"}}>
               Baixe o app <i className="fa fa-download"></i>
             </button>
           </div>
 
-          <div className="flex w-[50%] justify-center relative">
+          <div className="flex w-[50%] justify-center relative img-cellphone-header">
             <Image src="/assets/images/Vector.png" alt="" width={380} height={300} className="absolute -z-10" />
             <Image src="/assets/images/cellphone.png" alt="" width={220} height={300} className="" />
           </div>
@@ -53,7 +56,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <div className="transform rotate-180">
+      <div className="transform rotate-180 mt-[-1px]">
         <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
           <path fill="#054c8e" fill-opacity="1" d="M0,320 Q720,0 1440,320 L0,320 Z"></path>
         </svg>
@@ -62,9 +65,9 @@ export default function Home() {
       <section className="px-[10%]">
         <h1 className="w-full text-[28px] text-color-primary font-semibold mb-4">O que é o Plus Japan?</h1>
         <p className="w-full text-[17px] text-gray-700 font-medium mb-4">O Plus Japan é um aplicativo inovador, desenvolvido especialmente para falantes de português do Brasil,  que oferece uma abordagem completa e interativa para o aprendizado japonês.</p>
-        <p className="w-full text-[17px] text-gray-700 font-medium mb-4">Seja você um iniciante ou alguém que deseja aprimorar seus conhecimentos, nosso app tem tudo o que você precisa para progredir com confiança.</p>
+        <p className="w-full text-[17px] text-gray-700 font-medium mb-9">Seja você um iniciante ou alguém que deseja aprimorar seus conhecimentos, nosso app tem tudo o que você precisa para progredir com confiança.</p>
 
-        <div className="flex gap-x-5 w-full">
+        <div className="flex gap-x-5 w-full gap-y-8 list-services-app">
           <div className="flex flex-col items-center gap-y-2 bg-color-primary rounded-lg p-7">
             <Image src="/assets/images/hospital--Streamline-Emoji.png" alt="" width={50} height={40} className="mb-4"/>
             <h1 className="text-[28px] text-white font-semibold">Termos médicos</h1>
@@ -87,8 +90,8 @@ export default function Home() {
 
       <section className="px-[10%] my-[80px] relative">
         <Image src="/assets/images/Vector2.png" alt="" width={130} height={40} className="absolute -z-10 top-[-50px] right-[0px]" />
-        <h1 className="w-full text-[28px] font-semibold mb-[30px]">Por que escolher a Plus Japan?</h1>
-        <div className="flex w-full">
+        <h1 className="w-full text-[28px] font-semibold mb-[30px] text-color-primary">Por que escolher a Plus Japan?</h1>
+        <div className="flex w-full specialties">
           <div className="flex items-center justify-center rounded-l-xl py-[30px] w-[50%] bg-color-light-cyan">
             <Image src="/assets/images/Open Doodles Reading.png" alt="" width={380} height={40} />
           </div>
@@ -118,9 +121,9 @@ export default function Home() {
         <h1 className="w-full text-[28px] text-color-primary font-semibold mb-[30px]">Quem pode se beneficiar do Plus Japan?</h1>
 
         <div className="w-full mt-[40px]">
-          <div className="flex items-center gap-x-2 w-full rounded-xl px-5 py-[25px] relative bg-gray-100">
-            <div className="w-[150px] px-[20px]">
-              <Image src="/assets/images/grinning-face--Streamline-Emoji.png" alt="" width={80} height={40} />
+          <div className="flex items-center gap-2 w-full rounded-xl px-5 py-[25px] relative bg-gray-100 benefits">
+            <div className="w-[170px] px-[10px]">
+              <Image src="/assets/images/grinning-face--Streamline-Emoji.png" alt="" width={40} height={40} />
             </div>
 
             <div>
@@ -133,7 +136,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-full mt-[60px] gap-x-4 bg-color-primary rounded-xl px-[30px] py-[40px] items-center">
+        <div className="flex w-full mt-[60px] gap-x-4 bg-color-primary rounded-xl px-[30px] py-[40px] items-center section-download-app">
           <div className="flex flex-col gap-y-1 w-full">
             <div className="w-full">
               <Image src="/assets/images/smiling-face-with-sunglasses--Streamline-Emoji.png" alt="" width={40} height={40} />
@@ -145,7 +148,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="relative w-[250px] h-full">
+          <div className="relative w-[250px] h-full image-cellfone">
             <Image src="/assets/images/cellphone2.png" alt="" width={130} height={100} className="absolute z-10 top-[-120px]" />
           </div>
 
@@ -169,7 +172,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full flex items-start gap-x-[80px]">
+          <div className="w-full flex items-start gap-y-[140px] gap-x-[80px] content-footer">
             <ul className="flex flex-col gap-y-5 max-w-[450px]">
               <li className="flex flex-col gap-y-2">
                 <h2 className="flex items-center gap-x-2 text-color-cyan text-[17px]">
@@ -202,11 +205,13 @@ export default function Home() {
               </li>
             </ul>
 
-            <div className="flex flex-col gap-y-2 bg-white px-[25px] py-[25px] rounded-lg w-[480px] relative">
-              <Image src="/assets/images/smiling-face-with-smiling-eyes--Streamline-Emoji.png" alt="" width={50} height={50} />
-              <Image src="/assets/images/Open Doodles Selfie.png" alt="" width={200} height={50} className="absolute right-[-180px] top-[-20px] -z-0" />
-              <h3 className="font-semibold text-color-blue-night text-[18px]">Estamos a disposição</h3>
-              <p className="font-medium text-color-blue-night text-[16px]">Seja qual for sua dúvida ou necessidade, nossa equipe está pronta para ajudar. Entre em contato por qualquer um dos canais acima e responderemos o mais rápido possível.</p>
+            <div className="relative">
+              <Image src="/assets/images/Open Doodles Selfie.png" alt="" width={200} height={50} className="absolute right-[-170px] top-[-20px] -z-0 vector-self-footer" />
+              <div className="flex flex-col gap-y-2 bg-white px-[25px] py-[25px] rounded-lg max-w-[480px] relative">
+                <Image src="/assets/images/smiling-face-with-smiling-eyes--Streamline-Emoji.png" alt="" width={50} height={50} />
+                <h3 className="font-semibold text-color-blue-night text-[18px]">Estamos a disposição</h3>
+                <p className="font-medium text-color-blue-night text-[16px]">Seja qual for sua dúvida ou necessidade, nossa equipe está pronta para ajudar. Entre em contato por qualquer um dos canais acima e responderemos o mais rápido possível.</p>
+              </div>
             </div>
           </div>
         </div>  
