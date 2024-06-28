@@ -3,6 +3,18 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
+  const [toggle, setToggle] = useState(false);
+
+  const toggleNavMobile = () => {
+    setToggle(!toggle);
+    let navLinks: any = document.getElementById('nav-links');
+    if(toggle){
+      navLinks.style.display = "none";
+    } else {
+      navLinks.style.display = "flex";
+    }
+
+  }
   
   return (
     <>
@@ -12,15 +24,18 @@ export default function Home() {
           <span className="font-bold text-[30px] text-white">+Japan</span>
         </div>
 
-        <button className="btn-open-nav-mobile">
+        <button className="btn-open-nav-mobile" onClick={() => toggleNavMobile()}>
           <i className="fa fa-navicon"></i>
         </button>
-        <div className="flex items-center nav-links">
+        <div className="flex items-center nav-links" id="nav-links">
+          <button className="btn-close-nav-mobile" onClick={() => toggleNavMobile()}>
+            <i className="fa fa-close"></i>
+          </button>
           <Link href="#">O Curso</Link>
           <Link href="#">Sobre nós</Link>
           <Link href="#">Outras ferramentas</Link>
           <Link href="#">Contato</Link>
-          <Link href="#">Login</Link>
+          <Link href="#">Login <i className="fa fa-sign-in"></i></Link>
         </div>
       </nav>
       <header className="w-full header relative z-0 py-[120px]">
